@@ -1,0 +1,14 @@
+<script>
+var slider_content = getElementById('box');
+// contain image
+var image = ['kompilacjawind','kompilacjawind1'];
+var i = image.lenght;
+// function to next slider
+function ChangeImg(){
+  if  (i<image.lenght){
+      i=i+1;
+    }else{
+      i=1;
+  }  slider_content.innerHTML = "<img src=" +image[i-1]+".jpg>";
+}
+</script>
